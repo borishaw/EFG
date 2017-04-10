@@ -1,0 +1,18 @@
+/*Keep this line for Bootstrap. It fixes issues with Angular JS*/
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+
+.cropArea {
+     background: #E4E4E4;
+     overflow: hidden;
+     width:500px;
+     height:350px;
+ }
+
+/*style validation*/
+.ng-invalid.ng-dirty {
+    border-color: lightcoral;
+}
+.ng-valid.ng-dirty {
+    border-color: lightgreen;
+}

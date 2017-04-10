@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="efg">
+<head>
+    <meta charset="UTF-8">
+
+    <!--AngularJS and jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!--Masked Input for AngularJS-->
+    <script src='bower_components/angular-mask/dist/ngMask.min.js'></script>
+
+    <!--General JS-->
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!--BootStrap for AngularJS-->
+    <script type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.4/ui-bootstrap-tpls.min.js"></script>
+
+    <!--Google Maps API-->
+    <!--<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyCHNh5hOtaR0y5tgJg3fAXRz4fOWvGUxos"></script>-->
+
+    <!--Google Maps AutoComplete-->
+    <!--<script src="js/ngAutocomplete.js"></script>-->
+
+    <!--Image Crop-->
+    <script src="bower_components/angular-img-cropper/dist/angular-img-cropper.min.js"></script>
+
+    <!--Angular File Upload-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.9/ng-file-upload-shim.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/danialfarid-angular-file-upload/12.2.9/ng-file-upload.min.js"></script>
+
+    <!--CSS for BootStrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!--General CSS-->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!--CSS for Image Crop-->
+    <link rel="stylesheet" href="bower_components/ng-img-crop/compile/minified/ng-img-crop.css">
+
+    <title>Email Footer Generator (Multiple)</title>
+</head>
+<body>
+
+<div ng-controller="FooterController as fc" ng-if="!zipFile">
+
+    <!--Company Info Form-->
+    <form name="myForm" novalidate>
+        <h3>Company Info</h3>
+
+        <!--Logo upload and cropping-->
+        <div>
+            <label for="companyLogoInput">Upload your company logo: </label><input id="companyLogoInput" type="file" img-cropper-fileread image="cropper.sourceImage"/>
+            <div>
+                <canvas width="500" height="300" id="canvas" image-cropper image="cropper.sourceImage"
+                        cropped-image="cropper.croppedImage" crop-width="400" crop-height="200" min-width="100"
+                        min-height="50" keep-aspect="false" crop-area-bounds="bounds"></canvas>
+            </div>
+            <div>Cropped Image (Left: {{bounds.left}} Right: {{bounds.right}} Top: {{bounds.top}} Bottom:
+                {{bounds.bottom}})
+            </div>
+            <div><img ng-if="cropper.croppedImage" ng-src="{{cropper.croppedImage}}"/></div>
+        </div>
+
+        <input type="url" placeholder="Website Url" ng-model="companyUrl" http-prefix required/>
+
+        <input type="text" ng-autocomplete ng-model="company.address" options="options" details="details"
+               placeholder="Company Address" required/>
+
+        <input type="tel" placeholder="Company Phone Number" ng-model="company.phone" mask='(999) 999-9999' restrict="reject">
+
+
+        <ul>
+            <li>
+                <label for="fontColour">Font Colour:</label>
+                <input type="color" id="fontColour" ng-model="fontColour">
+            </li>
+            <li>
+                <label>Pick a colour for your social media icons: </label>
+                <input id="socialMediaBlack" name="socialMediaColour" type="radio" value="black" ng-model="socialMediaColour"><label for="socialMediaBlack">Black</label>
+                <input id="socialMediaGrey" name="socialMediaColour" type="radio" value="grey" ng-model="socialMediaColour"><label for="socialMediaGrey">Grey</label>
+                <input id="socialMediaCustom" name="socialMediaColour" type="radio" value="custom" ng-model="socialMediaColour"><label for="socialMediaCustom">Custom</label>
+            </li>
+            <li ng-if="errFile">
+                <div>{{errFile.name}} {{errFile.$error}} {{errFile.$errorParam}}</div>
+            </li>
+            <li ng-if="errorMsg">{{errorMsg}}</li>
+            <li>
+                <input type="checkbox" ng-model="companyFacebookCheckbox" id="companyFacebookCheckbox">
+                <label for="companyFacebookCheckbox">Facebook</label>
+                <input type="url" ng-show="companyFacebookCheckbox" ng-model="company.facebookUrl"
+                       placeholder="Company Facebook Page URL" http-prefix>
+                <button ng-show="socialMediaColour=='custom'" ngf-select="uploadFacebookIcon($file, $invalidFiles)" ngf-accept="'image/*'" ngf-max-height="50" ngf-max-size="100KB">Upload Facebook Icon</button>
+            </li>
+            <li>
+                <input type="checkbox" ng-model="companyLinkedInCheckbox" id="companyLinkedInCheckbox">
+                <label for="companyLinkedInCheckbox">LinkedIn</label>
+                <input type="url" ng-show="companyLinkedInCheckbox" ng-model="company.linkedinUrl"
+                       placeholder="Company LinkedIn Page URL" http-prefix>
+                <button ng-show="socialMediaColour=='custom'" ngf-select="uploadLinkedInIcon($file, $invalidFiles)" ngf-accept="'image/*'" ngf-max-height="50" ngf-max-size="100KB">Upload LinkedIn Icon</button>
+            </li>
+            <li>
+                <input type="checkbox" ng-model="companyBloggerCheckbox" id="companyBloggerCheckbox">
+                <label for="companyBloggerCheckbox">Blogger</label>
+                <input type="url" ng-show="companyBloggerCheckbox" ng-model="company.bloggerUrl" placeholder="Company Blogger Page URL" http-prefix>
+                <button ng-show="socialMediaColour=='custom'" ng-show="socialMediaColour=='custom'" ngf-select="uploadBloggerIcon($file, $invalidFiles)" ngf-accept="'image/*'" ngf-max-height="50" ngf-max-size="100KB">Upload Blogger Icon</button>
+            </li>
+            <li>
+                <input type="checkbox" ng-model="companyInstagramCheckbox" id="companyInstagramCheckbox">
+                <label for="companyInstagramCheckbox">Instagram</label>
+                <input type="url" ng-show="companyInstagramCheckbox" ng-model="company.instagramUrl" placeholder="Company Instagram Page URL" http-prefix>
+                <button ng-show="socialMediaColour=='custom'" ngf-select="uploadInstagramIcon($file, $invalidFiles)" ngf-accept="'image/*'" ngf-max-height="50" ngf-max-size="100KB">Upload Instagram Icon</button>
+            </li>
+            <li>
+                <input type="checkbox" ng-model="companyTwitterCheckbox" id="companyTwitterCheckbox">
+                <label for="companyTwitterCheckbox">Twitter</label>
+                <input type="url" ng-show="companyTwitterCheckbox" ng-model="company.twitterUrl" placeholder="Company Twitter Page URL" http-prefix>
+                <button ng-show="socialMediaColour=='custom'" ngf-select="uploadTwitterIcon($file, $invalidFiles)" ngf-accept="'image/*'" ngf-max-height="50" ngf-max-size="100KB">Upload Twitter Icon</button>
+            </li>
+        </ul>
+
+        <!--Individual Employee Form-->
+        <h3>Employee Info</h3>
+
+        <tabset>
+            <tab heading="Add New Employee" ng-click="fc.addNum()" ng-show="fc.allowAddNew"></tab>
+            <tab ng-repeat="n in numArray" heading="{{$index+1}}" active="true">
+                <div ng-form="personForm">
+                    <input type="text" ng-model="person.fname" placeholder="First Name" name="fname_{{$index+1}}"
+                           required>
+                    <input type="text" ng-model="person.lname" placeholder="Last Name" name="lname_{{$index+1}}"
+                           required>
+                    <input type="text" ng-model="person.title" placeholder="Title" name="title_{{$index+1}}">
+                    <input type="email" ng-model="person.email" placeholder="Email Address" name="email_{{$index+1}}"
+                           required>
+                    <input type="tel" ng-model="person.phone" placeholder="Phone Number" mask='(999) 999-9999'
+                           restrict="reject" name="phone_{{$index+1}}">
+                    <input type="number" ng-model="person.ext" placeholder="Extension">
+                    <button type="button" ng-click="fc.remove(n)" ng-show="fc.allowRemove">X</button>
+                    <button type="button" ng-click="person = null; personForm.$setPristine();">Reset</button>
+                </div>
+                <div id="footer{{$index+1}}">
+                    <table style="margin-top:40px;margin-left:20px;margin-bottom:30px;width:95%" border="0">
+                        <tr height="60">
+                            <td width="60">
+                                <img ng-if="cropper.croppedImage" ng-style="myStyle" ng-src="{{cropper.croppedImage}}"
+                                     alt="Logo" height="60"/>
+                            </td>
+                            <td>
+                                <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888;line-height:20px"><b
+                                        style="color:{{fontColour}};text-transform:uppercase;letter-spacing:2px">{{person.fname}}&nbsp;{{person.lname}}</b><span
+                                        ng-if="person.title.length">|</span> {{person.title}}</span>
+                                <br/>
+                                <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2">
+<b style="color:#888888">e:</b>&nbsp;&nbsp;<a ng-href="mailto:{{person.email}}" title="email {{person.fname}}"
+                                              style="text-decoration:none;border-bottom:1px dotted #b2b2b2;color:#b2b2b2">{{person.email}}</a>&nbsp;&nbsp;<b
+                                        style="color:#888888">t:</b>&nbsp;&nbsp;<a ng-if="!person.phone"
+                                                                                   tel="{{company.phone}}"
+                                                                                   style="text-decoration:none;border-bottom:1px dotted #b2b2b2;color:#b2b2b2">{{company.phone}}<span
+                                        ng-if="person.ext"> ext: {{person.ext}}</span></a><a
+                                        ng-if="person.phone" href="tel:{{person.phone}}"
+                                        style="text-decoration:none;border-bottom:1px dotted #b2b2b2;color:#b2b2b2">{{person.phone}}</a></span>
+                                <br/>
+                                <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2;text-decoration:none"><b
+                                        style="color:#888888">a:</b>&nbsp;&nbsp;<a
+                                        href="https://maps.google.com?q={{company.address}}" title="View On Google Maps"
+                                        style="text-decoration:none;border-bottom:1px dotted #b2b2b2;color:#b2b2b2"><span
+                                        ng-if="company.address">{{company.address}}</span></a></span>
+                                <br/>
+                                <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2;text-decoration:none"><b
+                                        style="color:#888888">w:</b>&nbsp;&nbsp;<a href="{{companyUrl}}"
+                                                                                   title="Visit Our Website"
+                                                                                   style="text-decoration:none;border-bottom:1px dotted #888;color:#b2b2b2">{{urlSliced}}</a></span><br/>
+                                <span ng-if="socialMediaColour=='black'" style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888;line-height:40px">
+                                    <a ng-if="companyFacebookCheckbox" href="{{company.facebookUrl}}" title="Like On Facebook"><img src="http://www.ankitdesigns.com/socialMediaIcons/black/fb.png" alt="Facebook Logo"/></a>
+                                    <a ng-if="companyLinkedInCheckbox" href="{{company.linkedinUrl}}" title="Connect On Linked In"><img src="http://www.ankitdesigns.com/socialMediaIcons/black/li.png" alt="LinkedIn Logo"/></a>
+                                    <a ng-if="companyBloggerCheckbox" href="{{company.bloggerUrl}}" title="Visit Our Blogger"><img src="http://www.ankitdesigns.com/socialMediaIcons/black/bl.png" alt="Blogger Logo"></a>
+                                    <a ng-if="companyInstagramCheckbox" href="{{company.instagramUrl}}" title="Follow us on Instagram"><img src="http://www.ankitdesigns.com/socialMediaIcons/black/ig.png" alt="Instagram Logo"></a>
+                                    <a ng-if="companyTwitterCheckbox" href="{{company.twitterUrl}}" title="Follow us on Twitter"><img src="http://www.ankitdesigns.com/socialMediaIcons/black/tt.png" alt="Twitter Logo"></a>
+                                </span>
+
+                                <span ng-if="socialMediaColour=='grey'" style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888;line-height:40px">
+                                    <a ng-if="companyFacebookCheckbox" href="{{company.facebookUrl}}" title="Like On Facebook"><img src="http://www.ankitdesigns.com/socialMediaIcons/grey/fb.png" alt="Facebook Logo"/></a>
+                                    <a ng-if="companyLinkedInCheckbox" href="{{company.linkedinUrl}}" title="Connect On Linked In"><img src="http://www.ankitdesigns.com/socialMediaIcons/grey/li.png" alt="LinkedIn Logo"/></a>
+                                    <a ng-if="companyBloggerCheckbox" href="{{company.bloggerUrl}}" title="Visit Our Blogger"><img src="http://www.ankitdesigns.com/socialMediaIcons/grey/bl.png" alt="Blogger Logo"></a>
+                                    <a ng-if="companyInstagramCheckbox" href="{{company.instagramUrl}}" title="Follow us on Instagram"><img src="http://www.ankitdesigns.com/socialMediaIcons/grey/ig.png" alt="Instagram Logo"></a>
+                                    <a ng-if="companyTwitterCheckbox" href="{{company.twitterUrl}}" title="Follow us on Twitter"><img src="http://www.ankitdesigns.com/socialMediaIcons/grey/tt.png" alt="Twitter Logo"></a>
+                                </span>
+
+                                <span ng-if="socialMediaColour=='custom'" style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888;line-height:40px">
+                                    <a ng-if="companyFacebookCheckbox && fbFile.result" href="{{company.facebookUrl}}" title="Like On Facebook"><img ng-src="{{fbFile.result}}" alt="Facebook Logo"/></a>
+                                    <a ng-if="companyLinkedInCheckbox && liFile.result" href="{{company.linkedinUrl}}" title="Connect On Linked In"><img ng-src="{{liFile.result}}" alt="LinkedIn Logo"/></a>
+                                    <a ng-if="companyBloggerCheckbox && blFile.result" href="{{company.bloggerUrl}}" title="Visit Our Blogger"><img ng-src="{{blFile.result}}" alt="Blogger Logo"></a>
+                                    <a ng-if="companyInstagramCheckbox && igFile.result" href="{{company.instagramUrl}}" title="Follow us on Instagram"><img ng-src="{{igFile.result}}" alt="Instagram Logo"></a>
+                                    <a ng-if="companyTwitterCheckbox && twFile.result" href="{{company.twitterUrl}}" title="Follow us on Twitter"><img ng-src="{{twFile.result}}" alt="Twitter Logo"></a>
+                                </span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <input type="hidden" name="footer{{$index + 1}}" value="" id="footerCode{{$index+1}}">
+                <div><p>The completeness of this employee's info is {{personForm.$valid}}</p></div>
+            </tab>
+        </tabset>
+        <button type="button" ng-disabled="myForm.$invalid" ng-click="copyFooters()">Generate</button>
+        <!--<input type="submit" ng-disabled="myForm.$invalid" value="Generate">-->
+    </form>
+    <div><p>The validity of the form is {{myForm.$valid}}</p></div>
+
+</div>
+
+<a ng-if="zipFile" href="{{zipFile}}" download>Your footers are ready to download</a>
+</body>
+</html>
