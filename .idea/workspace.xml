@@ -2,8 +2,65 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a042be0-bfd1-4185-8dc3-aaa1f201c913" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/font-awesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/font-awesome/fonts/FontAwesome.otf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/font-awesome/fonts/fontawesome-webfont.woff2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/img/logo-wpbeginner.png" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/img/logo-wpbeginner.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/CONTRIBUTING.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/Gemfile" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/Gemfile.lock" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/README.md" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/_config.yml" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/_config.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/component.json" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/component.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/css/font-awesome.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/less/font-awesome.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/less/icons.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/package.json" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/scss/_icons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/scss/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/scss/font-awesome.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/3.2.1/get-started/index.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/3.2.1/get-started/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/README.md-nobuild" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/README.md-nobuild" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/accessibility/accessibility-manual.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/accessibility/accessibility-manual.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/brand-license.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/brand-license.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/community/requesting-new-icons.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/community/requesting-new-icons.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/examples/accessible.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/examples/accessible.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/examples/bordered-pulled.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/examples/bordered-pulled.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/footer.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/footer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/icons/brand.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/icons/brand.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/jumbotron-carousel.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/jumbotron-carousel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/modals/download.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/modals/download.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/navbar.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/navbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/thanks-to.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_includes/thanks-to.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_layouts/base.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/_layouts/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/accessibility.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/accessibility.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/js/site.js" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/js/site.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/less/site.less" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/less/site.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/less/site/banner-ad.less" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/less/site/banner-ad.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/less/site/footer.less" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/less/site/footer.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/less/site/lazy.less" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/less/site/lazy.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/less/site/responsive/screen-xs.less" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/assets/less/site/responsive/screen-xs.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/cdn/error.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/cdn/error.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/cdn/success.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/cdn/success.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/get-started.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/get-started.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/icons.yml" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/icons.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/thanks.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/thanks.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/whats-new.html" afterPath="$PROJECT_DIR$/vendor/fortawesome/font-awesome/src/whats-new.html" />
     </list>
     <ignored path="EFG-v22.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,18 +80,7 @@
     <favorites_list name="EFG-v22" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,8 +90,8 @@
       <list>
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/fontaweson.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -86,6 +132,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="EFG" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EFG" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EFG" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="logo" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -199,19 +259,18 @@
       <option name="presentableId" value="Default" />
       <updated>1471630385287</updated>
       <workItem from="1471630386967" duration="5339000" />
-      <workItem from="1491841983552" duration="807000" />
+      <workItem from="1491841983552" duration="1376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6146000" />
+    <option name="totallyTimeSpent" value="6715000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2536349" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -302,19 +361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="114">
-            <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -323,18 +369,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/results.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/logo/brandico_2014-04-07_linkedin-rect_20_0_8e44ad_none.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="5" lean-forward="false" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="171">
+            <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-169">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>

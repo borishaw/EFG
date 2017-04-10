@@ -1,24 +1,24 @@
 [
     {
         "name": "fortawesome/font-awesome",
-        "version": "v4.6.3",
-        "version_normalized": "4.6.3.0",
+        "version": "v4.7.0",
+        "version_normalized": "4.7.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/FortAwesome/Font-Awesome.git",
-            "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e"
+            "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/8e241f209faa1dd2182c9fdc9c352d8806504a4e",
-            "reference": "8e241f209faa1dd2182c9fdc9c352d8806504a4e",
+            "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/a8386aae19e200ddb0f6845b5feeee5eb7013687",
+            "reference": "a8386aae19e200ddb0f6845b5feeee5eb7013687",
             "shasum": ""
         },
         "require-dev": {
             "jekyll": "1.0.2",
             "lessc": "1.4.2"
         },
-        "time": "2016-05-13 15:42:25",
+        "time": "2016-10-24 15:52:54",
         "type": "library",
         "extra": {
             "branch-alias": {
